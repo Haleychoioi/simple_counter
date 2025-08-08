@@ -1,12 +1,45 @@
-# React + Vite
+🔢 Simple Counter App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React로 만든 간단한 카운터 웹 애플리케이션입니다. 더하기, 빼기 버튼을 눌러 숫자를 조작할 수 있습니다.
 
-Currently, two official plugins are available:
+💡 주요 기능
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+카운트 증감: 다양한 값(-100, -10, -1, +1, +10, +100)을 더하거나 빼서 카운터의 숫자를 변경할 수 있습니다.
 
-## Expanding the ESLint configuration
+현재 값 표시: 현재 카운터의 숫자를 화면에 실시간으로 보여줍니다.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+상태 관리: useState 훅을 사용하여 카운트 상태를 관리하며, setCount((prev) => prev + value)와 같은 함수형 업데이트를 통해 안전하게 상태를 변경합니다.
+
+🚀 프로젝트 실행 방법
+
+레포지토리 클론:
+
+Bash
+
+git clone [원격 레포지토리 주소]
+
+의존성 설치: 프로젝트 폴더로 이동하여 필요한 패키지를 설치합니다.
+
+Bash
+
+cd [프로젝트 폴더명]
+
+npm install
+
+애플리케이션 실행:
+
+Bash
+
+npm run dev
+
+브라우저에서 http://localhost:5173 (또는 터미널에 표시되는 주소)으로 접속하여 앱을 확인할 수 있습니다.
+
+🛠️ 사용 기술
+
+React: UI를 구축하기 위한 JavaScript 라이브러리.
+
+React Hooks: useState를 사용하여 카운트 상태를 관리합니다.
+
+함수형 업데이트: setCount((prev) => prev + value)와 같이 현재 상태를 기반으로 안전하게 상태를 업데이트하는 방식을 사용합니다.
+
+📌 참고 : 인프런[한 입 크기로 잘라 먹는 리액트(React.js) : 기초부터 실전까지] 김영환
